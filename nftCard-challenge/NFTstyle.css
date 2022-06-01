@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.mainCont {
+    width: 330px;
+    height: 545px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+}
+.imgCont {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.imgCont img{
+    width: 280px;
+    border-radius: 10px;
+    position: relative;
+}
+.eye {
+    background-color: rgba(0, 255, 247, 0.507);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.eye img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    transform: translate(-50%, -25px);
+}
+.imgCont:hover .eye{
+    display: block;
+}
+
+.secCont {
+    width: 280px;
+    height: 130px;
+}
+.secCont h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+.secCont h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.secCont p, span{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.secCont p {
+    margin-bottom: 15px;
+}
+.secCont span:first-of-type {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    margin-left: 4px;
+}
+.secCont img:first-of-type{
+    position: relative;
+    top: 3px;
+}
+.secCont span:last-child {
+    font-weight: 400;
+    position: relative;
+    left: 93px;
+}
+.secCont img:nth-last-child(2) {
+    position: relative;
+    top: 3px; left: 90px;
+}
+.thrCont {
+    color: hsl(215, 51%, 70%);
+    width: 280px;
+    height: 60px;
+    border-top: 0.5px solid hsl(215, 32%, 27%);
+    
+}
+.thrCont span:last-child{
+    color: hsl(0, 0%, 100%);
+}
+.thrCont img{
+    width: 35px;
+    position: relative;
+    top: 15px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.thrCont span {
+    position: relative;
+    top: 4px; left: 13px;
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+    width: 280px;
+    height: 40;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+.attribution a { 
+    color: hsl(178, 100%, 50%); 
+}
+.thrCont span:hover:last-child{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}

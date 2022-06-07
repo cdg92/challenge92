@@ -33,6 +33,7 @@ a {
     background-color: var(--buttons-h1);
     display: inline-block;
     font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
 }
 a:hover {
     background-color: transparent;

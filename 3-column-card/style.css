@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --orange-card: hsl(31, 77%, 52%);
+    --blue-card: hsl(184, 100%, 22%);
+    --green-card: hsl(179, 100%, 13%);
+    --paragr: hsla(0, 0%, 100%, 0.75);
+    --buttons-h1: hsl(0, 0%, 95%);  
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--buttons-h1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 230vh;
+}
+.cardCont {
+    width: 90%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+a {
+    border-radius: 30px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: var(--buttons-h1);
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 27px;
+    color: var(--buttons-h1);
+}
+.imgs {
+    margin-bottom: 35px;
+}
+p {
+    margin-bottom: 25px;
+    line-height: 1.5rem;
+    font-size: 15px;
+    color: var(--paragr);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.backgOrange, .orange {
+    background-color: var(--orange-card);
+    border-radius: 10px 10px 0 0;
+}
+.Cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 47px;
+}
+.backgBlue, .blue {
+    background-color: var(--blue-card);
+}
+.backgGreen, .green{
+    background-color: var(--green-card);
+    border-radius: 0 0 10px 10px;
+}
+.ogText {
+    color: var(--orange-card);
+}
+.blText {
+    color: var(--blue-card);
+}
+.grText {
+    color: var(--green-card);
+}
+
+@media only screen and (min-width: 768px) {
+    .Cont {
+        align-items: center;
+        text-align: center;
+    }
+    .imgs, h1, p{
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    body {
+        min-height: 100vh;
+}
+    .cardCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+        padding: 0 16.4rem;
+        
+    }
+    br {
+        display: none; 
+    }
+    p {
+        margin-bottom: 90px;
+    }
+    .backgOrange {
+        border-radius: 10px 0 0 10px;
+    }
+    .backgGreen {
+        border-radius: 0 10px 10px 0;
+    }
+    .Cont {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .imgs {
+        margin-bottom: 35px;
+    } 
+    h1 {
+        margin-bottom: 27px;
+    }
+}
+
+
+
+
+
+
+

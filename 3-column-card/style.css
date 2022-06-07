@@ -34,6 +34,10 @@ a {
     display: inline-block;
     font-family: 'Lexend Deca', sans-serif;
 }
+a:hover {
+    background-color: transparent;
+    color: white;
+}
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
@@ -81,6 +85,7 @@ p {
 .grText {
     color: var(--green-card);
 }
+
 
 @media only screen and (min-width: 768px) {
     .Cont {

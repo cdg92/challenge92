@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --magenta: hsl(300, 43%, 22%);
+  --pink: hsl(333, 80%, 67%);
+  --dark-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  background: url('images/bg-pattern-top-mobile.svg') top left no-repeat,
+  url('images/bg-pattern-bottom-mobile.svg') bottom right no-repeat;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+.container {
+  padding: 75px 28px;
+}
+h1 {
+  color: var(--magenta);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  font-size: 2.6em;
+}
+.fp {
+  color: var(--dark-magenta);
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.7rem;
+  margin-bottom: 40px;
+
+}
+.rated {
+  color: var(--magenta);
+  font-weight: 700;
+  font-size: 16px;
+}
+.card {
+  background-color: var(--magenta);
+  height: 250px;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+.Rimg {
+  border-radius: 50%;
+  width: 43px;
+}
+h3 {
+  color: var(--White);
+  margin-bottom: 5px;
+}
+.vBuyer {
+  color: var(--pink);
+  font-size: 18px;
+}
+.card p {
+  color: var(--White);
+  line-height: 1.3rem;
+  font-size: 16px;
+}
+.firstCont {
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  
+}
+.ratedStars {
+  background-color: var(--light-magenta);
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+.stars img {
+  margin: 0 2px;
+}
+.x {
+  margin-bottom: 15px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+.RimName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.y {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 586px) {
+  h1, .fp {
+    padding: 0 95px;
+  }
+  .ratedStars {
+    width: 445px;
+  }
+  .starsConts {
+    display: flex;
+    flex-direction: column;
+  }
+  .center {
+    align-self: center;
+  }
+  .right {
+    align-self: flex-end;
+  }
+  .card {
+    width: 350px;
+    height: 235px;
+    padding: 40px 35px;
+    
+  }
+  .secondCont {
+    flex-direction: column;
+  }
+  .centerC {
+    align-self: center;
+    padding: 40px 37px;
+  }
+  .rightC {
+    align-self: flex-end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1, .fp {
+    padding: 0 12rem;
+  }
+  .secondCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .rightC {
+    margin: auto;
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  h1, .fp {
+    padding: 0 0;
+  }
+  .starsConts {
+    align-items: flex-end;
+  }
+  .center {
+    align-self: auto;
+  }
+  .starsConts {
+    width: 540px;
+    height: 200px;
+    /* align-self: flex-end; */
+  }
+  .textCont {
+    width: 430px;
+    height: 250px;
+    padding: 20px;
+  }
+  .firstCont {
+    flex-direction: row;
+    height: 250px;
+  }
+  
+}
+
+@media only screen and (min-width: 1106px) {
+  body {
+    height: 100vh;
+    background: url('images/bg-pattern-top-desktop.svg') top left no-repeat,
+    url('images/bg-pattern-bottom-desktop.svg') bottom right no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .secondCont {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 266px; 
+    gap: 10px; 
+    width: 100%;
+  }
+  .rightC {
+    margin: 0;
+  }
+  .centerC {
+    align-self: center;
+    margin: 0;
+  }
+  .container {
+    padding: 0;
+    width: 85%;
+  }
+  .firstCont {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .fp {
+    text-align: left;
+    font-size: 18px;
+  }
+  .ratedStars {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  .stars {
+    margin-left: 30px;
+  }
+  .container {
+    width: 70%;
+  }
+  .starsConts {
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .center {
+    align-self: center;
+  }
+  .textCont {
+   padding: 0;
+  }
+  .firstCont {
+    margin-bottom: 75px;
+  }
+
+}

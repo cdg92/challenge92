@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+--White-op: hsla(0, 0%, 100%, 0.5);
+--Moderate-violet-op: rgb(171, 128, 240);
+--Very-dark-blackish-blue-op: hsla(219, 29%, 14%, 0.7);
+}
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish-blue);
+}
+.container {
+    display: grid;
+    max-width: 330px;
+    gap: 25px;
+    margin: 70px auto;
+}
+.cont {
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+}
+.daniel {
+    background: url('images/bg-pattern-quotation.svg') no-repeat 200px 0px;
+    background-color: var(--Moderate-violet);
+}
+.img-name {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.img-name img{
+    border-radius: 50%;
+    width: 35px;
+}
+.daniel img{
+    border: 2px solid var(--Moderate-violet-op);
+}
+.pat img{
+    border: 2px solid var(--Moderate-violet);
+}
+.name {
+    align-self: center;
+}
+h4 {
+    font-weight: 500;
+}
+span {
+    font-size: 0.70rem;
+}
+.daniel h4, .jon h4, .pat h4 {
+    color: var(--White);
+}
+.daniel span, .jon span, .pat span {
+    color: var(--White-op);
+}
+.text p:first-child{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.text p:nth-child(2){
+    line-height: 1.2rem;
+    font-size: 0.83rem;
+}
+.white p:first-child {
+    color: var(--White);   
+}
+.white p:nth-child(2) {
+    color: var(--White-op);    
+}
+.black p:first-child {
+    color: var(--Very-dark-blackish-blue);
+    font-weight: 600;
+}
+.black p:nth-child(2) {
+    color: var(--Very-dark-blackish-blue-op);
+}
+.jon {
+    background-color: var(--Very-dark-grayish-blue);
+}
+.jean, .kira {
+    background-color: var(--White);
+}
+.pat {
+    background-color: var(--Very-dark-blackish-blue);
+}
+.jean h4, .kira h4{
+    color: var(--Very-dark-blackish-blue);
+}
+.jean span, .kira span{
+    color: var(--Very-dark-blackish-blue-op);
+}
+
+@media only screen and (min-width: 1024px){
+    .container {
+        margin: 165px auto;
+        max-width: 1110px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 30px
+    }
+    .daniel {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+    .kira {
+        grid-area: 1 / 4 / span 2 / span 1;
+    }
+    .pat {
+        grid-area: 2 / 2 / span 1 / span 2;
+    }
+    br {
+        display: none;
+    }
+    .daniel {
+        background-position:  355px 0px;
+    }
+    .text p:first-child{
+        font-size: 1.2rem;
+    }
+    .text p:nth-child(2){
+        font-size: 0.83rem;
+    }
+    .pd p:first-child {
+        padding-right: 10px;
+    }
+}

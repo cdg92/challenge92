@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/bg-mobile.png');
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: 325px;
+    margin: 125px auto;
+    display: grid;
+    gap: 15px;
+}
+.top-cont {
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 40px;
+    border-radius: 10px 100px 10px 10px;
+}
+.fylo-cont {
+    margin-bottom: 30px;
+}
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.icons-cont {
+    display: flex;
+    gap: 15px;
+}
+.bot-cont {
+    background-color: hsl(228, 56%, 26%);
+    padding: 35px 0 55px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+p {
+    color: hsl(243, 100%, 93%);
+    margin-bottom: 15px;
+    text-align: center; 
+}
+.bot-cont span {
+    font-weight: 700;
+}
+.bg {
+    border-radius: 20px;
+    width: 260px;
+    background-color: hsl(227, 55%, 20%);
+    margin-bottom: 10px;
+    padding: 0.2rem;
+}
+.color {
+    width: 75%;
+    height: 15px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.O {
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.gb {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(243, 100%, 93%);
+}
+.data {
+    width: 260px;
+}
+.gb span {
+    font-size: 12px;
+}
+.gb-left {
+    width: 180px;
+    height: 72px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+.gb-left span:first-child {
+    font-size: 2.5rem;
+}
+.gb-left span:last-child{
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        background: url('images/bg-desktop.png') no-repeat bottom left,
+        hsl(229, 57%, 11%);
+        background-size: 100% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 920px;
+        gap: 30px;
+        margin-bottom: 155px;
+    }
+    .bg {
+        width: 455px;
+    }
+    .data {
+        width: 455px;
+    }
+    p {
+        text-align: left;
+    }
+    .gb-left {
+        position: relative;
+        top: -160px;
+        left: 275px;
+        transform: translate(0, 0);
+
+    }
+    .gb-left::before {
+        content: '';
+        position: absolute;
+        top: 61px;
+        left: 150px;
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid white;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        transform: rotate(90deg);
+    }
+    .bot-cont {
+        height: 155px;
+        padding: 40px 40px 40px 35px;
+        align-self: flex-end;
+    }
+}
+
+
+
